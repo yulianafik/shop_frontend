@@ -39,16 +39,16 @@ export default function Card({
 }: CardProps) {
   const styles = {
     card: `bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 ${
-      square ? "aspect-square w-full max-w-80" : ""
+      square ? "aspect-[3/4] w-full" : ""
     }`,
     imageContainer: `relative w-full overflow-hidden bg-gray-100 ${
-      square ? "h-48" : "h-48"
+      square ? "aspect-square" : "h-48"
     }`,
     image: `w-full h-full ${
       imageMode === "cover" ? "object-cover" : "object-contain"
     } object-${imagePosition}`,
     badgeContainer: "absolute top-3 right-3",
-    content: "p-6",
+    content: "p-3",
     title: "text-xl font-bold text-gray-900 mb-2",
     description: "text-gray-600 mb-4",
   };

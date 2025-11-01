@@ -3,7 +3,6 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Header from "@/components/Header";
 import Card from "@/components/ui/Card";
-import Hero from "@/components/ui/Hero";
 import LoginForm from "@/components/ui/LoginForm";
 import RegisterForm from "@/components/ui/RegisterForm";
 import Modal from "@/components/ui/Modal";
@@ -139,57 +138,77 @@ export default function HomePage() {
         }}
       ></section>
 
-      <div className="mx-10 grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-        <Card
-          title="DIESEL ботиночки"
-          description="Удобно ракать, пацаны поймут"
-          image="/images/Men's D-Hammer-Denim Chelsea boots with Oval D toe caps _ Black 1.png"
-          imageMode="contain"
-          buttonText="В корзину"
-          square={true}
-        />
+      <section
+        className="py-16"
+        style={{
+          backgroundImage: "url(/images/Frame10.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="mx-10 grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+          <Card
+            title="DIESEL ботиночки"
+            description="удобно ракать, пацаны поймут"
+            image="/images/Men's D-Hammer-Denim Chelsea boots with Oval D toe caps _ Black 1.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
 
-        <Card
-          title="Карточка 2"
-          description="Вторая карточка"
-          image="/images/oreo.jpg"
-          buttonText="В корзину"
-        />
+          <Card
+            title="DIESEL ФУФАЙКА"
+            description="греет нефорское сердце"
+            image="/images/dieseljacket.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
 
-        <Card
-          title="Карточка 3"
-          description="Третья карточка"
-          image="/images/oreo.jpg"
-          buttonText="В корзину"
-        />
-        <Card
-          title="Карточка 4"
-          description="Первая карточка"
-          image="/images/oreo.jpg"
-          buttonText="В корзину"
-        />
+          <Card
+            title="NEW ERA ШАПКА МОНОМАХА"
+            description="реальный архив, в комплекте идут его мощи"
+            image="/images/yeticap.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
+          <Card
+            title="АЛЯСКА КУРТКА"
+            description="ты выглядишь так круто, мех на твоем капюшоне"
+            image="/images/alaskapuffer.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
 
-        <Card
-          title="Карточка 5"
-          description="Вторая карточка"
-          image="/images/oreo.jpg"
-          buttonText="В корзину"
-        />
+          <Card
+            title="OLD JEANS"
+            description="круто, а ты не помнишь, когда они были новыми?"
+            image="/images/trousers.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
 
-        <Card
-          title="Карточка 6"
-          description="Шестая карточка"
-          image="/images/oreo.jpg"
-          buttonText="В корзину"
-        />
-      </div>
+          <Card
+            title="О-О-Очень рваная кофта"
+            description="эти дырки греют"
+            image="/images/hoodie.png"
+            imageMode="cover"
+            buttonText="В корзину"
+            square={true}
+          />
+        </div>
+      </section>
 
       <Footer
         socialLinks={
           <>
             {/* ВКонтакте */}
             <a
-              href="#"
+              href="https://vk.com/bjprod"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="ВКонтакте"
             >
@@ -205,7 +224,7 @@ export default function HomePage() {
 
             {/* Telegram */}
             <a
-              href="#"
+              href="https://t.me/yuli011308"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Telegram"
             >
@@ -221,7 +240,7 @@ export default function HomePage() {
 
             {/* GitHub */}
             <a
-              href="#"
+              href="https://github.com/scheliwilli"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="GitHub"
             >
